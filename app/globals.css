@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #fff;
+  color: #202124;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.share-button {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #dadce0;
+  border-radius: 999px;
+  background: #fff;
+  color: #3c4043;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease;
+}
+.share-button:hover { background: #f8f9fa; border-color: #bdc1c6; }
+.share-button:active { transform: scale(.96); }
+
+.main-link {
+  display: flex;
+  min-height: 70px;
+  align-items: center;
+  gap: 14px;
+  border: 1.5px solid #dadce0;
+  border-radius: 14px;
+  padding: 13px 15px;
+  color: #202124;
+  background: #fff;
+  text-decoration: none;
+  transition: transform .15s ease, background .15s ease, border-color .15s ease, box-shadow .15s ease;
+}
+.main-link:hover {
+  transform: translateY(-2px);
+  border-color: #9aa0a6;
+  background: #f8f9fa;
+  box-shadow: 0 5px 16px rgba(32,33,36,.07);
+}
+.main-link:active { transform: scale(.985); }
+.main-link-featured {
+  border-color: #202124;
+  background: #202124;
+  color: #fff;
+  box-shadow: 0 7px 20px rgba(32,33,36,.13);
+}
+.main-link-featured:hover {
+  border-color: #202124;
+  background: #303134;
+}
+
+.link-icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 10px;
+  background: #f1f3f4;
+  color: #3c4043;
+}
+.link-icon-featured { background: rgba(255,255,255,.12); color: #fff; }
+
+.social-link {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  gap: 10px;
+  border: 1.5px solid #e0e3e7;
+  border-radius: 12px;
+  padding: 11px 12px;
+  color: #3c4043;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease;
+}
+.social-link:hover { background: #f8f9fa; border-color: #bdc1c6; transform: translateY(-1px); }
+
+.section-label {
+  flex-shrink: 0;
+  color: #5f6368;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.google-dot { width: 5px; height: 5px; border-radius: 999px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
