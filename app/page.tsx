@@ -5,10 +5,16 @@ import { ArrowUpRight, CalendarDays, Github, Instagram, Linkedin, MessageCircle,
 
 const links = [
   {
+    label: 'Side Quest : Build with AI Creative Lab',
+    meta: 'Side Quest is a hands-on "Build with AI" experience that explores a simple question : What would people create if they were...',
+    icon: CalendarDays,
+    featured: true,
+    href: 'https://gdg.community.dev/events/details/google-gdg-on-campus-rungta-international-skills-university-bhilai-india-presents-side-quest-build-with-ai-creative-lab/',
+  },
+  {
     label: 'Google Cloud - Learn with Communities',
     meta: 'Learn Google Cloud, earn badges, goodies and exclusive swags',
     icon: CalendarDays,
-    featured: true,
     href: 'https://docs.google.com/forms/d/e/1FAIpQLScIxD14Pyc183PbDLHcS9N-nbQRRYSncqY0TP3g7qSsfWgnKQ/viewform',
   },
   {
